@@ -1,0 +1,6 @@
+# Requirements for European Bank Customer Churn Analysis
+pandas
+numpy
+matplotlib
+openpyxl
+streamlit
