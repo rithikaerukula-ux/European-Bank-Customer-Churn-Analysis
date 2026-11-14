@@ -45,7 +45,7 @@ if submitted:
         "BalanceToSalaryRatio": ratio, "ProductDensityIndicator": int(products >= 2),
         "EngagementProductInteraction": (1 if active == "Yes" else 0) * products,
         "AgeTenureInteraction": age * tenure
-    }})[features]
+    }])[features]
     probability = float(model.predict_proba(row)[0, 1])
     st.metric("Estimated churn probability", f"{probability:.1%}")
     if probability < 0.30:
